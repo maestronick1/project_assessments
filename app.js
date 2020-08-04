@@ -2,6 +2,7 @@
     document.getElementById('increase').addEventListener('click', clickAdd);
     document.getElementById('decrease').addEventListener('click', clickSub);
 	let input = document.getElementById('input');
+	document.getElementById()
 	input.defaultValue = 1;
 	console.log(input)
     
@@ -11,6 +12,9 @@
 		//finalNumber += input
 		e.preventDefault();
 		number();
+		if( displayNumber.textContent >=0){
+			displayNumber.style.color = "black";
+		}
 		
 	}
 	function clickSub(e) {
@@ -18,7 +22,9 @@
 		//finalNumber-= input
 		e.preventDefault();
 		number();
-		
+		if( displayNumber.textContent >=0){
+			displayNumber.style.color = "red";
+		}
         
 
 	}
@@ -26,6 +32,8 @@
 	function number() {
 		document.getElementById('number').innerHTML = displayNumber;
 	}
-	
+	function turnRed{
+		
+	}
 	
 	
